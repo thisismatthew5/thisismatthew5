@@ -172,8 +172,9 @@
 	<div class="mywork" id="work">
 		<h2>My Work</h2>
 		<div class="workfull">
-			<div class="workdata" style="display: block;">
-				<a href="https://www.ibotsterling.com/"><img style="height: 150px;" src="images/ibot.png"></a>
+			<div class="workdata" style="display: block; margin-left: 5px; margin-top: 8px; border-radius:5px;  width: fit-content; background-color: gray;">
+				<a href="https://www.ibotsterling.com/"><img style="max-height: 200px; max-width: 200px;" src="images/ibot.png"></a><br><div>	
+				<span>IBOT</span><i id="hov" class="icofont-arrow-right"></i></div>
 			</div>
 			<div class="workdata">
 				
@@ -195,8 +196,14 @@
 					<a href="mailto:thisismatthew@gmail.com"><i class="icofont-email"style="font-size: 60px; color:#ff4d00d1;"></i></a>
 				</div>
 				<div class="talk">
-					<textarea placeholder="write me..."></textarea><br>
-					<input type="submit" name="">
+					<form method="post" action="mailme">	
+							<input type="text" name="name" placeholder="fullname" style="height: 30px; width: 200px; background-color: blue; color: white;"><br>	
+							<input type="text" name="email" placeholder="Your Email"><br>	
+							<input type="text" name="subject" placeholder="subject"><br>	
+							<textarea name="message" placeholder="message">	</textarea><br>	
+							<button type="submit" name="submit">	SEND MAIL</button>
+
+					</form>
 				</div>
 				
 			</div>
